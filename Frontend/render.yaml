@@ -1,0 +1,11 @@
+type: web
+name: node-frontend
+env: node
+buildCommand: "npm install"
+startCommand: "node index.js"
+rootDir: node-frontend
+plan: free
+autoDeploy: true
+envVars:
+  - key: API_URL
+    value: https://your-flask-backend.onrender.com/api
